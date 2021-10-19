@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Internship Task</title>
+	</head>
+	<body>
+		<center><h2>Registration Form</h2></center>
+		<div>
+			<form action="./api/User/signup.php" method="POST">
+				<input type="email" name="email" placeholder="Enter Email . . ."><br>
+				<input type="password" name="password" placeholder="Enter Password . . ."><br>
+				<input type="submit" name="email_registration" value="Register">
+			</form>
+		</div>
+		<div align="right">
+			<h2>Registration via Mobile number</h2>
+			<form action="./api/User/signup.php" method="POST">
+				<input type="text" name="mobile" placeholder="Enter Mobile Number. . ."><br>
+				<input type="password" name="password" placeholder="Enter Password . . ."><br>
+				<input type="submit" name="mobile_registration" value="Register via Mobile">
+			</form>
+		</div><center><h2>Login Form</h2></center>
+		<div>
+			<form action="./api/User/login.php" method="POST">
+				<input type="email" name="email" placeholder="Enter Email . . ."><br>
+				<input type="password" name="password" placeholder="Enter Password . . ."><br>
+				<input type="submit" name="email_login" value="Login">
+			</form>
+		</div>
+		<div align="right">
+			<h2>Login via Mobile number</h2>
+			<form action="./api/User/login.php" method="POST">
+				<input type="text" name="mobile" placeholder="Enter Mobile Number. . ."><br>
+				<input type="password" name="password" placeholder="Enter Password . . ."><br>
+				<input type="submit" name="mobile_login" value="Login via Mobile">
+			</form>
+		</div>
+	</body>
+</html>
